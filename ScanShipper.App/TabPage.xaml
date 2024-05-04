@@ -1,0 +1,21 @@
+﻿<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:ScanShipper.App"
+            x:Class="ScanShipper.App.TabPage">
+    <NavigationPage Title="Receive" IconImageSource="{StaticResource receiverPageIcon}">
+        <x:Arguments>
+            <local:ReceiverPage Title="Receive" />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Send" IconImageSource="{StaticResource senderPageIcon}">
+        <x:Arguments>
+            <local:SenderPage Title="Send" />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Info" IconImageSource="{StaticResource infoPageIcon}">
+        <x:Arguments>
+            <local:InfoPage Title="Info" />
+        </x:Arguments>
+    </NavigationPage>
+
+</TabbedPage>

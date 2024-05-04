@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScanShipper.App.SenderPage"
+             xmlns:zxing="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.MAUI.Controls"
+             
+             Title="SenderPage">
+    <ScrollView>
+        <VerticalStackLayout
+        Spacing="25"
+        Padding="30,0"
+        VerticalOptions="Fill"                             
+        HorizontalOptions="Fill">
+
+            <Button x:Name="pickButton" Clicked="pickButton_Clicked" />
+
+
+            <zxing:BarcodeGeneratorView
+                x:Name="barcodeGenerator"
+  HeightRequest="300"
+  WidthRequest="300"
+  ForegroundColor="DarkBlue"
+
+  Format="QrCode"
+  Margin="3" />
+
+            <Button x:Name="stopButton" Clicked="stopButton_Clicked" />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
